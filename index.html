@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" href="img/oculosbranco.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+      <script>
+    function scrollToTop(event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+ <header class="bg-[#111] py-4 px-6 flex justify-between items-center shadow-md">
+    <div class="flex items-center gap-3">
+        <!-- Logo substituindo o texto -->
+        <img src="/public/oculosbrancov2.PNG" 
+             alt="Logo ArtFlow" 
+             class="w-32 h-auto hover:scale-105 transition-transform">
+    </div>
+    <div class="flex gap-4 text-white">
+        <a href="login.html" class="border border-teal-500 px-4 py-2 rounded-lg hover:bg-teal-500 hover:text-gray-900 transition">Login</a>
+        <a href="registro.html" class="border border-teal-500 px-4 py-2 rounded-lg hover:bg-teal-500 hover:text-gray-900 transition">Registro</a>
+    </div>
+</header>
+
+    <main>
+        <section class="start">
+            <div class="start-text">
+                <h2>Boas-vindas ao ArtFlow</h2>
+                <p>Compartilhe suas obras e descubra talentos incríveis.</p>
+                <a href="galeria" class="border border-[#f0f8ff] px-4 py-2 rounded-lg hover:bg-[#f0f8ff] hover:text-gray-900 transition">Explore a Galeria</a>
+            </div>
+        </section>
+
+        <section class="cards-container">
+            <div class="card">
+                <span class="material-symbols-outlined">search</span>
+                <h3>Explore</h3>
+                <p>Descubra obras incríveis de artistas talentosos.</p>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">groups</span>
+                <h3>Conecte-se</h3>
+                <p>Interaja com outros artistas e compartilhe suas criações.</p>
+            </div>
+            <div class="card">
+                <span class="material-symbols-outlined">ios_share</span>
+                <h3>Compartilhe</h3>
+                <p>Publique suas obras e faça parte da comunidade ArtFlow.</p>
+            </div>
+        </section>
+      
+      <div class="box-grid">
+        <section class="box-section">
+            <div class="box-imagem">
+                <img src="/public/fones.jpg" alt="Música">
+            </div>
+            <div class="box-text">
+                <h2>Música</h2>
+                <p>Compartilhe suas criações de áudio, desde composições originais até covers e remixes. Conecte-se com outros amantes da música e receba feedback valioso.</p>
+            </div>
+        </section>
+
+        <section class="box-section">
+            <div class="box-imagem">
+              <img src="/public/jovens.jpg" alt="Ilustração">
+            </div>
+            <div class="box-text">
+              <h2>Ilustração</h2>
+              <p>Mostre suas ilustrações, designs e rabiscos. Inspire-se com o trabalho de outros artistas e faça parte de uma comunidade criativa.</p>
+            </div>
+        </section>
+        
+        <section class="box-section">
+            <div class="box-imagem">
+              <img src="/public/foto.jpg" alt="Fotografia">
+            </div>
+            <div class="box-text">
+              <h2>Fotografia</h2>
+              <p>Compartilhe suas fotos, desde retratos até paisagens. Explore diferentes estilos e técnicas com outros fotógrafos apaixonados.</p>
+            </div>
+        </section>
+        
+        <section class="box-section">
+            <div class="box-imagem">
+              <img src="/public/bolha.jpg" alt="Não Tenha Medo">
+            </div>
+            <div class="box-text">
+              <h2>Não Tenha Medo</h2>
+              <p>Seja qual for sua forma de arte, você pode compartilhá-la aqui! Escultura, colagem, 3D, e muito mais. O ArtFlow é o lugar para todas as expressões artísticas.</p>
+            </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+            <h2>ArtFlow</h2>
+            <p>&copy; 2025 ArtFlow. Todos os direitos reservados.</p>
+            <p>Seu espaço para expressar a criatividade.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="#" onclick="scrollToTop(event)">Início</a></li>
+              <li><a href="galeria">Galeria</a></li>
+              <li><a href="suporte">Suporte</a></li>
+              <li><a href="login">Login</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
